@@ -30,14 +30,8 @@ def merge(numbers, start, mid, end):
 
 
 def is_anagram(first_string, second_string):
-    # if len(first_string) == 0 or len(second_string) == 0:
-    #     return False
-
     string1_list = list(first_string.lower())
     string2_list = list(second_string.lower())
-
-    # print(string1_list)
-    # print(string2_list)
 
     merge_sort(string1_list)
     merge_sort(string2_list)
@@ -45,21 +39,9 @@ def is_anagram(first_string, second_string):
     string1_ordenada = "".join(string1_list)
     string2_ordenada = "".join(string2_list)
 
-    # print("entrei")
+    if len(first_string) == 0 or len(second_string) == 0:
+        return tuple([string1_ordenada, string2_ordenada, False])
 
     sao_anagramas = string1_ordenada == string2_ordenada
 
     return tuple([string1_ordenada, string2_ordenada, sao_anagramas])
-
-
-# print(is_anagram("", "alergia"))
-# def is_anagram(first_string, second_string):
-#     if len(first_string) != len(second_string):
-#         return tuple([None, None, False])
-
-#     string1_ordenada = sorted(first_string)
-#     string2_ordenada = sorted(second_string)
-
-#     sao_anagramas = string1_ordenada == string2_ordenada
-
-#     return tuple([string1_ordenada, string2_ordenada, sao_anagramas])
