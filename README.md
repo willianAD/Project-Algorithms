@@ -23,7 +23,7 @@ Desenvolvimento dos requisitos utilizando as abordagens especificadas.
 
 ## Requisitos
 
-<img src="">
+<img src="https://raw.githubusercontent.com/willianAD/Project-Algorithms/main/image/Projeto%20Algorithms.png">
 
 # Requisitos Obrigatórios
 
@@ -34,8 +34,6 @@ Você trabalha na maior empresa de educação do Brasil. Certo dia, a pessoa Pro
 O horário de entrada e saída do sistema é cadastrado no banco de dados toda vez que uma pessoa estudante entra e sai do sistema. Esses dados estarão contidos em uma lista de tuplas (`permanence_period`) em que cada tupla representa o período de permanência de uma pessoa estudante no sistema com seu horário de entrada e de saída.
 
 Seu trabalho é descobrir qual o melhor horário para disponibilizar os conteúdos de estudo. Para isso, utilize a estratégia de resolução de problemas chamada `força bruta` em que a função desenvolvida por você será chamada várias vezes com valores diferentes para a variável `target_time` e serão analisados os retornos da função.
-
-:eyes: _De olho na Dica:_ O melhor horário será aquele no qual o contador retornado pela função for o maior
 
 <details>
  <summary>
